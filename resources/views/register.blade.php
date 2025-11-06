@@ -1,4 +1,5 @@
 @extends('publicbase')
+
 @section('content')
-    <livewire:insert-form />
+    <livewire:auth.register />
 @endsection

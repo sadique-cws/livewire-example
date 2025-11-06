@@ -1,15 +1,13 @@
  <div class="w-full gap-6 lg:gap-12">
-    <div class="flex w-full mb-6 p-10">
           @if (session()->has('message'))
                  <div class="bg-green-200 w-full text-green-800 px-3 py-2 rounded">
                      {{ session('message') }}
                  </div>
              @endif
              
-    </div>
     <div class="flex flex-1">
      <div class="w-3/12">
-         <div class="w-full max-w-md mx-auto mt-10 p-6 border rounded">
+         <div class="w-full max-w-md mx-auto p-6 border rounded">
              <h1 class="text-3xl mb-4">@if($isUpdate) Update @else Insert @endif Form</h1>
              <form wire:submit="save">
                  <div class="mb-3">
